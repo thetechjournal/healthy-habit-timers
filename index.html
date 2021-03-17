@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Count Down Timer</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Healthy Habit Timers</h1>
+    </div>
+    <div class="theme">
+        <h2 class="forest">🌳 Forest <span id="forest-theme-play">▶️</span><span id="forest-theme-stop" hidden>⏹</span></h2>
+        <h2 class="rain">🌧 Rain <span id="rain-theme-play">▶️</span><span id="rain-theme-stop" hidden>⏹</span></h2>
+        <h2 class="ocean">🏖 Ocean <span id="ocean-theme-play">▶️</span><span id="ocean-theme-stop" hidden>⏹</span></h2>
+    </div>
+
+    <audio id="forest-audio" loop hidden>
+        <source src="./sounds/forest.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+      </audio> 
+
+    <audio id="rain-audio" loop hidden>
+        <source src="./sounds/rain.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>   
+
+    <audio id="ocean-audio" loop hidden>
+        <source src="./sounds/ocean.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+
+    <div class="grid">
+        <div class="grid-item one">
+            <div>
+               <h3>Stretch</h3>
+            </div>
+            <div>
+                <form id="stretch">
+                   <input type="time" id="stretch-timer" class="timer" name="time" required>
+                   <input class="btn" type="submit" id="stretch-start" value="Start">
+                   <input class="btn" type="submit" id="stretch-stop" value="Reset" hidden>
+                </form>
+               
+            </div>
+            <div class="clockdiv" id="stretch-clockdiv">
+               <div>
+                   <span class="hours">00</span>
+                   <div class="smalltext">hrs</div>
+               </div>
+               <div>
+                   <span class="minutes">00</span>
+                   <div class="smalltext">min</div>
+               </div>
+               <div>
+                   <span class="seconds">00</span>
+                   <div class="smalltext">secs</div>
+               </div>
+           </div>
+        </div>
+        <div class="grid-item two">
+            <div>
+                <h3>Water</h3>
+             </div>
+             <div>
+                 <form id="water">
+                    <input type="time" id="water-timer" class="timer" name="time" required>
+                    <input class="btn" type="submit" id="water-start" value="Start">
+                    <input class="btn" type="submit" id="water-stop" value="Reset" hidden>
+                 </form>
+                
+             </div>
+             <div class="clockdiv" id="water-clockdiv">
+                <div>
+                    <span class="hours">00</span>
+                    <div class="smalltext">hrs</div>
+                </div>
+                <div>
+                    <span class="minutes">00</span>
+                    <div class="smalltext">min</div>
+                </div>
+                <div>
+                    <span class="seconds">00</span>
+                    <div class="smalltext">secs</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item three">
+            <div>
+                <h3>Eye Exercise</h3>
+             </div>
+             <div>
+                <form id="eye">
+                   <input type="time" id="eye-timer" class="timer" name="time" required>
+                   <input class="btn" type="submit" id="eye-start" value="Start">
+                   <input class="btn" type="submit" id="eye-stop" value="Reset" hidden>
+                </form>
+               
+            </div>
+            <div class="clockdiv" id="eye-clockdiv">
+               <div>
+                   <span class="hours">00</span>
+                   <div class="smalltext">hrs</div>
+               </div>
+               <div>
+                   <span class="minutes">00</span>
+                   <div class="smalltext">min</div>
+               </div>
+               <div>
+                   <span class="seconds">00</span>
+                   <div class="smalltext">secs</div>
+               </div>
+           </div>
+        </div>
+        <div class="grid-item four">
+            <div>
+                <h3>Meditation</h3>
+             </div>
+             <div>
+                <form id="meditation">
+                   <input type="time" id="meditation-timer" class="timer" name="time" required>
+                   <input class="btn" type="submit" id="meditation-start" value="Start">
+                   <input class="btn" type="submit" id="meditation-stop" value="Reset" hidden>
+                </form>
+               
+            </div>
+            <div class="clockdiv" id="meditation-clockdiv">
+               <div>
+                   <span class="hours">00</span>
+                   <div class="smalltext">hrs</div>
+               </div>
+               <div>
+                   <span class="minutes">00</span>
+                   <div class="smalltext">min</div>
+               </div>
+               <div>
+                   <span class="seconds">00</span>
+                   <div class="smalltext">secs</div>
+               </div>
+           </div>
+        </div>
+        <div class="grid-item five">
+            <div>
+                <h3>Reading</h3>
+             </div>
+             <div>
+                <form id="reading">
+                   <input type="time" id="reading-timer" class="timer" name="time" required>
+                   <input class="btn" type="submit" id="reading-start" value="Start">
+                   <input class="btn" type="submit" id="reading-stop" value="Reset" hidden>
+                </form>
+               
+            </div>
+            <div class="clockdiv" id="reading-clockdiv">
+               <div>
+                   <span class="hours">00</span>
+                   <div class="smalltext">hrs</div>
+               </div>
+               <div>
+                   <span class="minutes">00</span>
+                   <div class="smalltext">min</div>
+               </div>
+               <div>
+                   <span class="seconds">00</span>
+                   <div class="smalltext">secs</div>
+               </div>
+           </div>
+        </div>
+        <div class="grid-item six">
+            <div>
+                <h3>Pomodoro</h3>
+             </div>
+             <div>
+                <form id="pomodoro">
+                   <input type="time" id="pomodoro-timer" class="timer" name="time" required>
+                   <input class="btn" type="submit" id="pomodoro-start" value="Start">
+                   <input class="btn" type="submit" id="pomodoro-stop" value="Reset" hidden>
+                </form>
+               
+            </div>
+            <div class="clockdiv" id="pomodoro-clockdiv">
+               <div>
+                   <span class="hours">00</span>
+                   <div class="smalltext">hrs</div>
+               </div>
+               <div>
+                   <span class="minutes">00</span>
+                   <div class="smalltext">min</div>
+               </div>
+               <div>
+                   <span class="seconds">00</span>
+                   <div class="smalltext">secs</div>
+               </div>
+           </div>
+        </div>
+       
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
